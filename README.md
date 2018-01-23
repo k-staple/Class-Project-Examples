@@ -1,2 +1,2 @@
-# Project-Examples-C-
-Projects from my first computing class (Fall 2017)
+# Class-Project-Examples
+C++ projects from my first computing class (Fall 2017)
