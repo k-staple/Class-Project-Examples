@@ -13,10 +13,4 @@ I verified that the program could produce a list of states with a
 mininum number of representatives by choosing just under California's 
 number and correctly only California showed up. I then changed 
 California's numbers of rep.s and checked the list for the same number 
-of rep.s; California correctly did not appear. After I turned in the 
-code, I checked the age of two states. The first worked, but the second 
--South Dakota- and then Rhode Island created an infinite loop, 
-presumably related to them being two words. Updating number of 
-representatives also initiates an infinite loop, but priting two word 
-states in the list that have a min. number of rep.s works. It appears   
-( it->getName == stringComparingItWith ) is the problem.
+of rep.s; California correctly did not appear.
