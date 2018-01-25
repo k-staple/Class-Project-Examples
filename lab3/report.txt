@@ -1,0 +1,25 @@
+// Lab 3 section 3
+// Kathryn Stapleton Sept 16
+
+This lab calculates the greatest common denominator, polar coordinates after asking for Cartesian coordinates, and the 
+following menu:
+
+From the user's perspective, the user chooses from four operations and a quitting option
+by entering a number. If the user quits, a goodbye message is displayed. If not, the user is prompted to enter two numbers 
+and the result of the chosen operation and two inputs is displayed. This continues until the user chooses quit.
+
+As for how the program was built, first, the functions are declared. Then, the main function has the following in a while loop. 
+The user input a number that will be stored in the variable choice.
+ Then, the program has an if statment to check if the user wants to quit.
+If so, a goodbye message is displayed before break is used. Otherwise, the code prompts the user for two numbers.
+A follow-up if statement checked if the user inputted an integer not 1-5. In that case, the program 'continue' to the while loop's next iteration.
+ Then, an if block outputs the echoed numerical choices and the appropriate result.
+ This happens by calling the appropriate function within the mutually exclusive if statements. 
+
+The functions at the bottom compute and return the result.
+
+I verified by running the program intermittently while writing to check that it ouputted what I expected.
+Then, I tried all the operations with sample numbers.
+Then, I checked what happens if the second number inputted is 0 and the user chooses division.
+ Once I saw on piazza that we had to reprompt for incorrect choice of operation, I checked if my code will reprompt for new numbers if numbers greater or less than 1-5 were entered.
+Finally, I checked multiplication to make sure the code could handle negative numbers. 

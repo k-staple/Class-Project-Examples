@@ -1,0 +1,41 @@
+// Kathryn Stapleton, Othello
+From the user's perspective, the program should show an Othello board 
+with the standard four original pieces in the middle and ask two humans 
+to alternate choosing valid spots to place their pieces. The players can 
+only place pieces adjacent to those already on the board. If their 
+choice is already chosen, isn't on the board, or isn't adjacent to a 
+piece already placed, the player gets an error message and is prompted 
+to choose a valid space until they do. Since my program doesn't require 
+swaps, the game has a number of rounds equal to the board's size squared 
+minus 4. After that, a tie or the winner is outputted.
+
+The program creates an Othboard object. Then, it has a for loop for the number of rounds 
+(board's size squared minus 4). If the round is even, the current Player is X, so the game starts
+ with X and alternates. The program takes in the current player's choice of coordinates. 
+It uses the checkNeighbor method to make sure the choice is valid. If not, the user is 
+prompted to choose again until checkNeighbor returns 1 which means valid choice. The board
+ at that valid position is then changed with the piece method. Then, the swap method 
+is called to see if swaps need to be made. 
+
+Swap checks to see if the position's adjacent 
+neighbors are the oppposite player's. If so, the method checks the piece, continuing in the 
+same direction radially (If the left neighbor was the opposing player's, the program keeps 
+moving to the left). If the program finds a current player's piece, it reverses direction 
+and flips all of the opponent's pieces it came across in that line. Technically how I did 
+that was if a neighbor was an opponent's piece, the program entered a while loop that that 
+for each additional opponent's piece it found would add to a counter. If that line did 
+end with the current player's piece and that line was flanked, reverse direction to the 
+last found opponent's piece, flip that, and use the counter to know how many spaces to 
+reverse direction and flip the piece.
+
+After swapping, the program clears the old board and displays the updated board. At the 
+end, it uses the winner method to display the winner. The winner method iterates through 
+the whole board, counting which piece is more prevalent.
+
+I tested the program by starting with 4x4 then 6x6 then 8x8. I played the 4 x 4 game 
+through completely to make sure the program gave the correct number of rounds and it 
+showed the correct winner. I also played a 6x6 game choosing the top half to become X and the bottom to become O to make 
+sure tie was outputted. I chose sqaures already chosen, sqaures not adjacent to already 
+placed pieces, and coordinates not on the board to make sure it wouldn't let me do that.
+
+I didn't find any incorrect results.

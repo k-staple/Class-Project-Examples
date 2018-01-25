@@ -1,0 +1,25 @@
+// Report of Lab 2
+// Kathryn Stapleton, section 1, Sept 10
+
+This lab includes an interest calculator, multiplication table constructor, and a graph.
+
+Graph y=15sin(x) + cos(x) + 16:
+
+From the user's perspective, the user sees a set graph of the function
+y= 15sin(x) + cos(x) + 16  with x from 0-10 increasing by .5. The program requires no input to calculate the graph.
+
+As for how it works, the program is built around a for loop that calculates the values of y (written ynew)
+for the increasing values of x. During each step, it checks if the new value of y is greater than or less than the older one.
+If so, it stores that y value and the corresponding x. 
+
+For the bar graph part, during each step of the for loop, I initialize a string back to no characaters
+and an integer counter back to 0. Then, within a while loop, I set the string variable bar 
+equal to a concatenation of itself and another "#." This happens as many times as 
+that iteration's ynew has whole digits (as in 1 time for ynew of 1.13).
+
+At the end, the program displays the stored (x,y) min and (x,y) max.
+
+I checked the program by comparing it to my calculator's table of values with the same function
+and increment of x. That checked out.  I counted the number of hashtags versus the value of ynew. One too many hashtags were 
+printing on every line so I modified the while statement to only print another one if the counter
+is less than or equal to (ynew MINUS ONE).
