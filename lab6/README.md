@@ -1,0 +1,2 @@
+Lab 6 has two projects. Saylist asks for the name of a file, reads from it, and has the following abilities: play all sayings, add a new saying, search for all sayings that contain what you're looking,save all sayings in new text file, and remove a saying.
+
