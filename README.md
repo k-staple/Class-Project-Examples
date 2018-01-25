@@ -7,6 +7,8 @@ Othello was created towards the end of the class, so it demonstrates more skills
 like the traditional Othello game, but was 
 created without the requirement to make a piece switch teams every turn.
 
+Labs 10 and 11 use the X11 library to display graphics. Lab 11 has several fractals created with recursion. Lab 10 shows a circle bouncing off the window's edge in 'bounce' and other abilities.
+
 State asks for input from a file- usstates.csv in the same directory is intended to be used- and allows the user to learn 
 about and update states' number of representatives. It uses a state class I created with various member functions. 
 
